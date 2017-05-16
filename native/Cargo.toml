@@ -1,0 +1,17 @@
+[package]
+name = "neon-uv"
+version = "0.1.0"
+authors = ["Alfie Kirkpatrick <alfie@evolok.com>"]
+license = "MIT"
+build = "build.rs"
+
+[lib]
+name = "neon_uv"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.17"
+
+[dependencies]
+# neon = { path = "../../neon" }
+neon = "0.1.17"
